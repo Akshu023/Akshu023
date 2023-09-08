@@ -1,0 +1,463 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>Travel</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+
+    <link 
+
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" 
+
+      rel="stylesheet" 
+
+    /> 
+
+    <link rel="stylesheet" href="./styles.css" /> 
+
+    <style> 
+
+    :root { 
+
+  --primary: #ec682c; 
+
+  --secondary: #4b40c5; 
+
+  --white: #ffffff; 
+
+} 
+
+  
+
+html, 
+
+body { 
+
+  margin: 0px; 
+
+  font-family: "Lato", sans-serif; 
+
+} 
+
+  
+
+h1 { 
+
+  font-size: 2rem; 
+
+} 
+
+  
+
+h2 { 
+
+  font-size: 1.8rem; 
+
+} 
+
+  
+
+h3 { 
+
+  font-size: 1.6rem; 
+
+} 
+
+  
+
+.d-flex { 
+
+  display: flex; 
+
+} 
+
+  
+
+.align-center { 
+
+  align-items: center; 
+
+} 
+
+  
+
+.hero-section { 
+
+  width: 100vw; 
+
+  height: 100vh; 
+
+  background-repeat: no-repeat; 
+
+  background-size: cover; 
+
+  background-position: center; 
+
+  
+
+  > .header { 
+
+    position: relative; 
+
+    width: 100%; 
+
+    height: 80px; 
+
+    padding: 20px 30px 20px 30px; 
+
+    box-sizing: border-box; 
+
+  
+
+    > .branding { 
+
+      width: 5%; 
+
+    } 
+
+  
+
+    > .authentication { 
+
+      width: 30%; 
+
+    } 
+
+  
+
+    > .navigation { 
+
+      width: 65%; 
+
+      padding: 0 20px; 
+
+  
+
+      > ul { 
+
+        list-style-type: none; 
+
+        display: flex; 
+
+        justify-content: space-around; 
+
+        > li { 
+
+          font-size: 1.5rem; 
+
+          font-weight: bold; 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+  
+
+.btn { 
+
+  width: 100%; 
+
+  height: 50px; 
+
+  border: none; 
+
+  color: var(--white); 
+
+  border-radius: 10px; 
+
+  font-family: "Lato", sans-serif; 
+
+  font-size: 1.2rem; 
+
+  cursor: pointer; 
+
+} 
+
+  
+
+.btn-primary { 
+
+  background: var(--primary); 
+
+} 
+
+  
+
+.btn-secondary { 
+
+  background: var(--secondary); 
+
+} 
+
+  
+
+.content-section { 
+
+  width: 100%; 
+
+  height: calc(100% - 80px); 
+
+  padding: 30px; 
+
+  box-sizing: border-box; 
+
+  
+
+  > .content { 
+
+    > h1 { 
+
+      color: var(--secondary); 
+
+    } 
+
+  
+
+    > h3 { 
+
+      color: var(--white); 
+
+    } 
+
+  } 
+
+} 
+
+.category_section_desceiption{ 
+
+color: black; 
+
+font-weight: 900; 
+
+} 
+
+.category_section_head{ 
+
+font-weight: bold; 
+
+color: #4B40C5; 
+
+} 
+
+.category_card { 
+
+  display: inline-block; 
+
+  width: 100px; 
+
+  height: 100px; 
+
+  border: 1px solid black; 
+
+  } 
+
+  .category_section{ 
+
+  text-align: center; 
+
+  } 
+
+  .category_cards { 
+
+  display: flex; 
+
+  justify-content: center; 
+
+  align-items: center; 
+
+} 
+
+  
+
+.description { 
+
+  margin: 10px; 
+
+} 
+
+.best-flights{ 
+
+width: 100px; 
+
+height: 50px; 
+
+} 
+
+</style> 
+
+  </head> 
+
+  <body> 
+
+    <section class="hero-section" style="background-image:url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/109794809.jpg?k=3b2c02769e6450dc52f060dd995ff7204653bf9fea981f194dee1f96e31cd48c&o=&hp=1'); 
+
+      "> 
+
+      <header class="header d-flex align-center"> 
+
+        <div class="branding"> 
+
+          <img 
+
+            style="width: 100px" 
+
+            src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=2000" 
+
+          /> 
+
+        </div> 
+
+        <div class="navigation"> 
+
+          <ul> 
+
+            <li>Destinations</li> 
+
+            <li>Hotels</li> 
+
+            <li>Flights</li> 
+
+            <li>Bookings</li> 
+
+          </ul> 
+
+        </div> 
+
+        <div class="authentication d-flex"> 
+
+          <button 
+
+            class="btn btn-primary" 
+
+            style="width: 100px; margin-right: 20px" 
+
+          > 
+
+            Login 
+
+          </button> 
+
+          <button class="btn btn-primary" style="width: 100px">Signup</button> 
+
+        </div> 
+
+      </header> 
+
+      <div class="content-section d-flex align-center"> 
+
+        <div class="content"> 
+
+          <h1>Travel, Live and Enjoy New and Full Life</h1> 
+
+          <h3>Find the best destintaion around the world</h3> 
+
+          <button class="btn btn-secondary" style="width: 250px"> 
+
+            Find your destination 
+
+          </button> 
+
+        </div> 
+
+      </div> 
+
+    </section> 
+
+    </div> 
+
+    <div class="category_section" > 
+
+  <h3 class="category_section_head">CATEGORY</h3> 
+
+  <h1>We Offer Best Service</h1> 
+
+  </div> 
+
+  
+
+    <div class="category_cards"> 
+
+    <div class="description"> 
+
+    <div class="calculative_weather"> 
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ-SVOttz_e-T1xD3i7ptvDxkEaogbLJl6df11Qz2h&s" alt="Weather Image"> 
+
+  <div class ="calculative_weather_description"> 
+
+    <h4> Calculated wether</h4> 
+
+    <p >As much of<br /> information possible<br /> with the weather</p> 
+
+  </div> 
+
+</div> 
+
+</div> 
+
+<div class="best_flights"> 
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg5AngQkZXUj8uQm8QQ7n6ixzxmJslK8CgGw&usqp=CAU" alt="Flight image"> 
+
+   <div class="best_flights_description"> 
+
+    <h4>Best flights</h4> 
+
+    <p>Gtting cheap best<br /> flights.</p> 
+
+    </div> 
+
+</div> 
+
+<div class="local_events"> 
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujHAVrqeMROriGu_lLefu0TjILr6410nyaw&usqp=CAU" alt="Microphone" style="width:150px;height:150px"> 
+
+  <div class="local_events_description"> 
+
+  <h4> Local events</h4> 
+
+    <p>Getting good<br /> iternary based on<br /> the events.</p> 
+
+  </div> 
+
+  <div class="Customization"> 
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYTqfzjG8gruFJ3Y9qB6XJa1XM4nsLzPiEQ&usqp=CAU"style="width:150px;height:150px"> 
+
+  <div class="customization_description"> 
+
+  <h4> Customization</h4> 
+
+    <p>We deliver<be />ousourced servics<br />for customers.</p> 
+
+  </div> 
+
+</div> 
+
+</div> 
+
+</body> 
+
+</html> 
+
+  
+
+   
+
+   
